@@ -18,7 +18,7 @@ public class Car
      */
     public Car(double fuelEfficiency )
     {
-        fuelEfficiency = fuelEfficiency;
+        this.fuelEfficiency = fuelEfficiency;
         fuelInTank=0;
     }
 
@@ -35,8 +35,32 @@ public class Car
      */
     public void drive(double distance)
     {
-        // put your code here
-        return x+y;
+        fuelInTank-= distance / fuelEfficiency;
     }
+    
+    /**
+     * returns the number of gallons of gas in the car's tank
+     *
+   
+     * @return returns the number of gallons of gas in the car's tank
+     */
+    public double getGasInTank()
+    {
+        return fuelInTank;
+    }
+
+    /**
+     * Increments the amount of gas in the car's tank by the specified number  of gallons.
+     *
+     * @pre     gallonsOfGas must be positive
+     *
+     * @param   gallonsOfGas amount of gas to add to the car's tank
+     *
+     */
+    public void addGas(double gallonsOfGas)
+    {
+        fuelInTank += gallonsOfGas;
+    }
+
 
 }
