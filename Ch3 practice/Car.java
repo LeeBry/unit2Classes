@@ -19,7 +19,7 @@ public class Car
     public Car(double fuelEfficiency )
     {
         this.fuelEfficiency = fuelEfficiency;
-        fuelInTank=0;
+        this.fuelInTank=0;
     }
 
     /**
@@ -37,7 +37,8 @@ public class Car
     {
         fuelInTank-= distance / fuelEfficiency;
     }
-    
+    
+
     /**
      * returns the number of gallons of gas in the car's tank
      *
@@ -48,7 +49,8 @@ public class Car
     {
         return fuelInTank;
     }
-
+
+
     /**
      * Increments the amount of gas in the car's tank by the specified number  of gallons.
      *
