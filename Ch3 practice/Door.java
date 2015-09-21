@@ -1,10 +1,9 @@
 
-
 /**
- * Write a description of class Door here.
+ * Open and closes a door.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Bryce Lee) 
+ * @version (September 15th ,2015)
  */
 public class Door
 {
@@ -20,31 +19,32 @@ public class Door
     public Door(String newName, boolean tf)
     {
         this.isOpen = tf;
-        
+
         this.name = newName;
     }
 
     /**
-     * This method will open the door
+     * This method will open the door.
      *
-     * @post    statusDoor is set to "open"
+     * @post statusDoor is set to "open"
      * */
     public void openDoor()
     {
         isOpen = true;
     }
-    /** This method give a new name to the door
+
+    /** This method give a new name to the door
      *
-     * @post    sets a new name
-     * @param   String newName is the new name of the door
+     * @post    Sets a new name.
+     * @param   String newName is the new name of the door.
      */
     public void setName(String newName)
     {
         this.name = newName;
     }
-    
+
     /**
-     * This method will close the door
+     * This method will close the door.
      *
      * @post    statusDoor is set to "close"
      */
@@ -52,18 +52,20 @@ public class Door
     {
         isOpen = false;
     }
-    /**
-    *This method returns the status of the door as true or false
-    *@return boolean true or false (open or closed)
-    */
+
+    /**
+     *This method returns the status of the door as true or false.
+     *@return boolean true or false (open or closed)
+     */
     public boolean getStatus()
     {
-       return isOpen;
+        return isOpen;
     }
+
     /**
-     * returns the name of the door
+     * Returns the name of the door
      *
-     * @pre     door has name
+     * @pre     Door has name
      * @return  String name of the door
      */
     public String getName()

@@ -30,10 +30,10 @@ Constructing Javadoc information...
 Standard Doclet version 1.8.0_45
 Building tree for all the packages and classes...
 Generating \\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\doc\Door.html...
-\\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:20: warning - @param argument "String" is not a parameter name.
-\\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:20: warning - @param argument "String" is not a parameter name.
+\\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:19: warning - @param argument "String" is not a parameter name.
+\\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:19: warning - @param argument "boolean" is not a parameter name.
 \\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:51: warning - @post is an unknown tag.
-\\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:63: warning - @pre is an unknown tag.
+\\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:71: warning - @pre is an unknown tag.
 \\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:31: warning - @post is an unknown tag.
 \\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:41: warning - @post is an unknown tag.
 \\sd203.org\dfs-root$\HS\NNHS\Students\BYLee\GitHub\unit2Classes\Ch3 practice\Door.java:41: warning - @param argument "String" is not a parameter name.
