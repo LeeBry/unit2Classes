@@ -1,68 +1,58 @@
-
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Point2D;
 
 /**
- * A car has a certain fuel efficiency and a certain amount of fuel in the gas tank.
- * The car may be driven which reduces tha amount of gas in the fuel tank.
- * @author (Bryce Lee) 
- * @version (September 10th, 2015)
- */
-public class Car
-{
-    /**The fuelEfficiency for the car measured in units of miles / gallon (MPG) */
-    private double fuelEfficiency;
-    /** the amount of fuel in the tank of the car measured in units of gallons */
-    private double fuelInTank;
-
-    /**
-     * Constructor for objects of class Car that specifies the fuel efficiency
-     */
-    public Car(double fuelEfficiency )
-    {
-        this.fuelEfficiency = fuelEfficiency;
-        this.fuelInTank=0;
+ * A car shape that can be positioned anywhere on the screen.
+ * */
+ 
+ public class Car
+ {
+     private int xLeft;
+     private int yTop;
+     /**
+      * Constructs a car with a given top left corner.
+      * @param x the x-coordinate of the top-left corner
+      * @param y the y-coordinate of the top-left corner
+      */
+     public Car(int x, int y)
+     {
+         xLeft=x;
+         yTop= y;
+        }
+        /**
+         * Draws the car.
+         * @param g2 the graphics context
+         */
+        public void draw(Graphics2D g2)
+        {
+            Rectangle body= new Rectangle(xLeft, yTop+ 10, 60, 10);
+            Ellipse2D.Double frontTire
+                        =new Ellipse2D.Double(xLeft+10,yTop+20,10,10);
+            Ellipse2D.Double rearTire
+                        =new Ellipse2D.Double(xLeft+40,yTop+20,10,10);
+            // The bottom of the front windshield
+            Point2D.Double r1= new Point2D.Double(xLeft+10,yTop+10);
+            //The front of the roof
+            Point2D.Double r2= new Point2D.Double(xLeft+20,yTop);
+            //The rear of the roof
+            Point2D.Double r3= new Point2D.Double(xLeft+40,yTop);
+            // The bottom of the rear windshield
+            Point2D.Double r4= new Point2D.Double(xLeft+50,yTop+10);
+            
+            Line2D.Double frontWindshield = new Line2D.Double(r1,r2);
+            Line2D.Double roofTop= new Line2D.Double(r2,r3);
+            Line2D.Double rearWindshield = new Line2D.Double(r3,r4);
+            
+            g2.draw(body);
+            g2.draw(frontTire);
+            g2.draw(rearTire);
+            g2.draw(frontWindshield);
+            g2.draw(roofTop);
+            g2.draw(rearWindshield);
+        }
     }
-
-    /**
-     * This method simulates driving the car for the specified distance and reduces the amount
-     * of gas in the fuel tank
-     *
-     * @pre        The specified distance will not sonsume more the available gas
-     *        
-     *
-     *            (what the method guarantees upon completion)
-     * @param    distance      The specified distance to drive in units of miles
-     * 
-     */
-    public void drive(double distance)
-    {
-        fuelInTank-= distance / fuelEfficiency;
-    }
-    
-
-    /**
-     * returns the number of gallons of gas in the car's tank
-     *
-   
-     * @return returns the number of gallons of gas in the car's tank
-     */
-    public double getGasInTank()
-    {
-        return fuelInTank;
-    }
-
-
-    /**
-     * Increments the amount of gas in the car's tank by the specified number  of gallons.
-     *
-     * @pre     gallonsOfGas must be positive
-     *
-     * @param   gallonsOfGas amount of gas to add to the car's tank
-     *
-     */
-    public void addGas(double gallonsOfGas)
-    {
-        fuelInTank += gallonsOfGas;
-    }
-
-
-}
+                        
+                        

@@ -55,4 +55,31 @@ public class VendingMachineTest
         Candy.fillUp(5);
         assertEquals( 10,Candy.getCanCount());
 }
+ @Test
+    public void testInsertToken()
+    {
+        VendingMachine Candy = new VendingMachine(10,10); 
+        Candy.insertToken();
+        assertEquals( 11,Candy.getTokenCount());
+        Candy.insertToken();
+        assertEquals( 12,Candy.getTokenCount());
+}
+ @Test
+    public void testGetTokenCount()
+    {
+        VendingMachine Candy = new VendingMachine(10,10); 
+        Candy.insertToken();
+        assertEquals( 11,Candy.getTokenCount());
+        Candy.insertToken();
+        assertEquals( 12,Candy.getTokenCount());
+}
+ @Test
+    public void testGetCanCount()
+    {
+        VendingMachine Candy = new VendingMachine(10,10); 
+        Candy.insertToken();
+        assertEquals( 9,Candy.getCanCount());
+        Candy.insertToken();
+        assertEquals( 8,Candy.getCanCount());
+}
 }

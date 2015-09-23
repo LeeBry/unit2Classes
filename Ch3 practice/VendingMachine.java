@@ -25,12 +25,7 @@ public class VendingMachine
     /**
      * This method adds one more can to the machine.
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    
-     * @return 
+     * @pre     cans must be a positive number.
      */
     public void fillUp(int cans)
     {      
@@ -40,10 +35,6 @@ public class VendingMachine
         /**
      *This method returns the number of cans in the machine.
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
      * @param    y    description of parameter y
      * 
      */
@@ -51,15 +42,12 @@ public class VendingMachine
     {
         return  cans;
     }
-    
+    
+
     /**
      * This method returns the number of tokens in the machine.
      *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
+     * @pre     token must be a number
      * @return  Token value
      */
     public int getTokenCount()
@@ -71,10 +59,6 @@ public class VendingMachine
      * This method inserts a token. The number of tokens is increased, 
      * and the number of cans is decreased. 
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
      * @param    y    description of parameter y
      * 
      */
