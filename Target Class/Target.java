@@ -1,8 +1,8 @@
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.geom.Ellipse2D;
-import java.awt.geom.Line2D;
-import java.awt.geom.Point2D;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /**
  * A car shape that can be positioned anywhere on the screen.
@@ -30,11 +30,17 @@ public class Target
     public void draw(Graphics2D g2)
     {
         Rectangle body= new Rectangle(xLeft, yTop+ 10, 60, 10);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        double screenY = screenSize.getHeight();
+        double screenX= screenSize.getWidth();
         Ellipse2D.Double Circle1
-        =new Ellipse2D.Double(xLeft+10,yTop+20,10,10);
+        =new Ellipse2D.Double(screenX/10,screenY/10,10,10);
         Ellipse2D.Double Circle2
-        =new Ellipse2D.Double(xLeft+40,yTop+20,10,10);
+        =new Ellipse2D.Double(screenX/10,screenY/10,100,100);
 
+        
+        g2.draw(Circle1);
+        g2.draw(Circle2);
     }
 }
 
