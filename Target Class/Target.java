@@ -33,10 +33,11 @@ public class Target
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         double screenY = screenSize.getHeight();
         double screenX= screenSize.getWidth();
+       
         Ellipse2D.Double Circle1
-        =new Ellipse2D.Double(screenX/10,screenY/10,10,10);
+        =new Ellipse2D.Double(50,50,100,100);
         Ellipse2D.Double Circle2
-        =new Ellipse2D.Double(screenX/10,screenY/10,100,100);
+        =new Ellipse2D.Double(75,75,100,100);
 
         
         g2.draw(Circle1);
