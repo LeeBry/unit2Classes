@@ -16,8 +16,7 @@ public class Rectangle
       // compute the average of the three numbers
 
       double area= length*width;
-      double py= length*length + width*width;
-      double dia= Math.sqrt(py);
+      double dia= Math.sqrt(length*length + width*width);
       
       
       System.out.println ("The average of this rectangle is: "+area+"\n"+
