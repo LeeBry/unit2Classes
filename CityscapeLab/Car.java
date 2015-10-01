@@ -1,4 +1,7 @@
-
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.geom.Ellipse2D;
+import java.awt.Dimension;
 
 /**
  * Write a description of class Car here.
@@ -8,33 +11,36 @@
  */
 public class Car
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
-
+   private int xLeft;
+   private int yTop;
     /**
      * Default constructor for objects of class Car
      */
-    public Car()
+    public Car(int x,int y)
     {
-        // initialise instance variables
-        x = 0;
+        xLeft=x;
+        yTop= y;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Draws the car
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param    g2 the graphics context
+ 
      */
-    public int sampleMethod(int y)
+    public void draw(Graphics2D g2)
     {
-        // put your code here
-        return x+y;
+        Rectangle body= new Rectangle(xLeft, yTop+ 10, 60, 10);
+       
+        Ellipse2D.Double Circle1
+        =new Ellipse2D.Double(50,50,100,100);
+        Ellipse2D.Double Circle2
+        =new Ellipse2D.Double(75,75,100,100);
+        
+        g2.draw(Circle1);
+        g2.draw(body);
+        g2.draw(Circle2);
+
     }
 
 }

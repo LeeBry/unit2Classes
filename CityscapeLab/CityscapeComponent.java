@@ -30,8 +30,15 @@ public class CityscapeComponent extends JComponent
         Graphics2D g2 = (Graphics2D) g;
         
         // invoke the draw method on each object in your Cityscape
-        // ...
-        
+        // lines below are the constructors 
+        Car car1= new Car(50,50);
+        car1.draw(g2);
+        int x = getWidth()-60;
+        int y = getHeight()-30;
+        //Tree tree1= new Tree(50,50);
+        //Sun sun= new Sun(500,30);
+        //sun.draw(g2);
+        //Building buildingA= new Building(50,50);
         
     }
     

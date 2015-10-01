@@ -1,4 +1,6 @@
-
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.Dimension;
 
 /**
  * Write a description of class Sun here.
@@ -9,32 +11,33 @@
 public class Sun
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int x;
-
+   private int xLeft;
+   private int yTop;
     /**
-     * Default constructor for objects of class Sun
+     * Default constructor for objects of class Car
      */
     public Sun()
     {
-        // initialise instance variables
-        x = 0;
+        xLeft=500;
+        yTop= 30;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Draws the sun
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param    g2 the graphics context
+ 
      */
-    public int sampleMethod(int y)
+    public void draw(Graphics2D g2)
     {
-        // put your code here
-        return x+y;
+ 
+       
+        Ellipse2D.Double Sun1
+        =new Ellipse2D.Double(75,75,100,100);
+        
+        g2.draw(Sun1);
+
+
     }
 
 }

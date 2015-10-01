@@ -4,20 +4,20 @@ import java.awt.geom.Ellipse2D;
 import java.awt.Dimension;
 
 /**
- * Write a description of class Tree here.
+ * Write a description of class Building here.
  * 
- * @Bryce Lee(your name) 
+ * @author (your name) 
  * @version (a version number or a date)
  */
-public class Tree
+public class Building
 {
     /** description of instance variable x (add comment for each instance variable) */
     private int x;
 
     /**
-     * Default constructor for objects of class Tree
+     * Default constructor for objects of class Building
      */
-    public Tree()
+    public Building()
     {
         // initialise instance variables
         x = 0;
