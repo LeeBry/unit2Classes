@@ -2,42 +2,31 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.geom.Ellipse2D;
 import java.awt.Dimension;
-
+import java.awt.Color;
 /**
- * Write a description of class Building here.
+ * Write a description of class building
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class Building
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
 
     /**
-     * Default constructor for objects of class Building
-     */
-    public Building()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * Draws the car
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param    g2 the graphics context
+ 
      */
-    public int sampleMethod(int y)
+    public void draw(Graphics2D g2)
     {
-        // put your code here
-        return x+y;
+
+        g2.fillRect(100, 300, 150, 600);
+        g2.setColor(Color.orange);
+        g2.fillRect(200, 200, 400, 400);
+
+ 
+
     }
 
 }

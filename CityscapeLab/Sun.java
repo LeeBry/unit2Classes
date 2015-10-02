@@ -1,26 +1,16 @@
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import java.awt.geom.Ellipse2D;
 import java.awt.Dimension;
-
+import java.awt.Color;
 /**
- * Write a description of class Sun here.
+ * Write a description of class Sun
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class Sun
 {
-    /** description of instance variable x (add comment for each instance variable) */
-   private int xLeft;
-   private int yTop;
-    /**
-     * Default constructor for objects of class Car
-     */
-    public Sun()
-    {
-        xLeft=500;
-        yTop= 30;
-    }
 
     /**
      * Draws the sun
@@ -30,13 +20,14 @@ public class Sun
      */
     public void draw(Graphics2D g2)
     {
- 
-       
-        Ellipse2D.Double Sun1
-        =new Ellipse2D.Double(75,75,100,100);
-        
-        g2.draw(Sun1);
+       g2.setColor(Color.YELLOW);
+       g2.fillOval(35, 45, 75, 95);
+        	
 
+
+        
+
+ 
 
     }
 
