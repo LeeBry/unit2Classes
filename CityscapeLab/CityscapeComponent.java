@@ -19,7 +19,6 @@ public class CityscapeComponent extends JComponent
     // define the objects in your Cityscape as instance variables
     // ...
 
-    
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
 
@@ -39,7 +38,10 @@ public class CityscapeComponent extends JComponent
         GradientPaint gp = new GradientPaint(0, 0, Color.BLACK,0, h, Color.WHITE);
         g2.setPaint(gp);
         g2.fillRect(0, 0, w, h);
-
+        
+        //lines below are the constructors for Hills
+        Hills backhills= new Hills();
+        backhills.draw(g2);
         // lines below are the constructors for sun
         Moon moon= new Moon();
         moon.draw(g2);
@@ -52,10 +54,9 @@ public class CityscapeComponent extends JComponent
         // lines below are the constructors for Stars
         Ground ground1=new Ground();
         ground1.draw(g2);
-
+        
 
     }
-
     /**
      * Animate the cityscape by updating the objects such that they appear to be animated when they are next drawn.
      *
@@ -65,7 +66,6 @@ public class CityscapeComponent extends JComponent
         // update the objects in the cityscape so they are animated
         // ...
 
-        
         // request that the Java Runtime repaints this component by invoking its paintComponent method
         repaint();
     }

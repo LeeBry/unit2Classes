@@ -11,7 +11,6 @@ import java.awt.Color;
  */
 public class Ground
 {
-
     /**
      * Draws the ground
      * @param    g2 the graphics context
@@ -21,12 +20,5 @@ public class Ground
     {
         g2.setColor(Color.black);  
         g2.fillRect(0, 540, 785, 25);
-
-
-
-
- 
-
     }
-
 }
