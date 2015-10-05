@@ -1,7 +1,10 @@
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
+import java.awt.geom.Rectangle2D;
 import java.awt.geom.Ellipse2D;
 import java.awt.Dimension;
+import java.util.Random;
+import java.awt.geom.Line2D;
 import java.awt.Color;
 /**
  * Write a description of class building
@@ -20,19 +23,18 @@ public class Building
      */
     public void draw(Graphics2D g2)
     {
-        g2.fillRect(100, 350, 100, 400);
-        //Rectangle bounds = new Rectangle(100, 350, 100, 400);
+
+        Rectangle2D.Double bounds = new Rectangle2D.Double(100, 350, 100, 400);
+        g2.fill(bounds);
         g2.setColor(Color.black);
-        g2.fillRect(200, 400, 100, 400);
-        //Rectangle bounds1 = new Rectangle(200, 400, 100, 400);
+        Rectangle2D.Double bounds1 = new Rectangle2D.Double(200, 400, 100, 400);
+        g2.fill(bounds1);
         g2.setColor(Color.white);
-        g2.fillRect(300, 300, 100, 400);
-        //Rectangle bounds2 = new Rectangle(300, 300, 100, 400);
+        Rectangle2D.Double bounds2 = new Rectangle2D.Double(300, 300, 100, 400);
+        g2.fill(bounds2);
         g2.setColor(Color.black);
-        g2.fillRect(400, 312, 100, 400);
-        //Rectangle bounds3 = new Rectangle(400, 312, 100, 400);
-        // For now I do not know why it is not drawing the rectangle... figure out later.
-        // wanting to draw the rectangles to add a boarder to the buildings, so
-        // I can color the buildings all the same color.
+        Rectangle2D.Double bounds3 = new Rectangle2D.Double(400, 312, 100, 400);
+        g2.fill(bounds3);
+
     }
 }

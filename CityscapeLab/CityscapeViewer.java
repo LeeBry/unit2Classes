@@ -1,4 +1,5 @@
 import javax.swing.JFrame;
+import java.util.Scanner;
 
 /**
  * Class that contains the main method for the program and creates the frame containing the component.
@@ -26,6 +27,10 @@ public class CityscapeViewer
         
         // use the Scanner class to prompt the user for some configurable aspect of the cityscape
         // ...
+        Scanner numStars = new Scanner(System.in);
+
+        System.out.println("How many Stars do you want in the sky?: ");
+         int stars= numStars.nextInt();
         
         
         

@@ -18,6 +18,10 @@ public class CityscapeComponent extends JComponent
 {
     // define the objects in your Cityscape as instance variables
     // ...
+    private Building building;
+    private Moon moon;
+    private Stars stars;
+    private Hills hills;
 
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...

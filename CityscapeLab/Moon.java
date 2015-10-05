@@ -3,6 +3,7 @@ import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
+import java.awt.geom.Ellipse2D;
 /**
  * Write a description of class Moon
  * 
@@ -20,6 +21,7 @@ public class Moon
     public void draw(Graphics2D g2)
     {
         g2.setColor(Color.WHITE);
-        g2.fillOval(35, 35, 75, 75);
+        Ellipse2D.Double moon= new Ellipse2D.Double(35, 35, 75, 75);
+        g2.fill(moon);
     }
 }
