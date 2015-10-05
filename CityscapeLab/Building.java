@@ -13,7 +13,7 @@ public class Building
 {
 
     /**
-     * Draws the car
+     * Draws the building
      *
      * @param    g2 the graphics context
  
@@ -21,9 +21,10 @@ public class Building
     public void draw(Graphics2D g2)
     {
 
-        g2.fillRect(100, 300, 150, 600);
-        g2.setColor(Color.orange);
-        g2.fillRect(200, 200, 400, 400);
+        g2.fillRect(100, 350, 100, 400);
+        g2.setColor(Color.black);
+        g2.fillRect(200, 400, 100, 400);
+
 
  
 
