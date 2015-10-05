@@ -4,31 +4,21 @@ import java.awt.geom.Ellipse2D;
 import java.awt.Dimension;
 import java.awt.Color;
 /**
- * Write a description of class Sun
+ * This draws the ground of the city
  * 
- * @author (your name) 
+ * @Bryce Lee
  * @version (a version number or a date)
  */
-public class Sun
+public class Ground
 {
-
     /**
-     * Draws the sun
-     *
+     * Draws the ground
      * @param    g2 the graphics context
  
      */
     public void draw(Graphics2D g2)
     {
-       g2.setColor(Color.YELLOW);
-       g2.fillOval(35, 45, 75, 95);
-        	
-
-
-        
-
- 
-
+        g2.setColor(Color.black);  
+        g2.fillRect(0, 540, 785, 25);
     }
-
 }
