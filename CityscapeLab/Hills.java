@@ -1,15 +1,12 @@
 import java.awt.Color;
 import java.awt.GradientPaint;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
 /**
- * Write a description of class Hills
+ * In the background, draws the hills.
  * 
- * @author (your name) 
+ * @Bryce Lee
  * @version (a version number or a date)
  */
 public class Hills

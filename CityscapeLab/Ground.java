@@ -4,9 +4,9 @@ import java.awt.geom.Ellipse2D;
 import java.awt.Dimension;
 import java.awt.Color;
 /**
- * Write a description of class ground
+ * This draws the ground of the city
  * 
- * @author (your name) 
+ * @Bryce Lee
  * @version (a version number or a date)
  */
 public class Ground
