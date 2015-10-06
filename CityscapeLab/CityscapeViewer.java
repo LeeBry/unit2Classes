@@ -11,6 +11,7 @@ public class CityscapeViewer
 {
     // the cityscape will be animated for 60 seconds
     static final int ANIMATION_TIME_IN_SECONDS = 60;
+    public int stars;
    
     /**
      * main method for the program which creates and configures the frame for the program
@@ -27,15 +28,15 @@ public class CityscapeViewer
         
         // use the Scanner class to prompt the user for some configurable aspect of the cityscape
         // ...
+        
         Scanner numStars = new Scanner(System.in);
-
         System.out.println("How many Stars do you want in the sky?: ");
-         int stars= numStars.nextInt();
+        int stars= numStars.nextInt();
         
         
         
         // a frame contains a single component; create the Cityscape component and add it to the frame
-        CityscapeComponent component = new CityscapeComponent( /* pass the user-specified value */ );
+        CityscapeComponent component = new CityscapeComponent(stars);
         frame.add(component);
         
         // make the frame visible which will result in the paintComponent method being invoked on the

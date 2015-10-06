@@ -11,7 +11,11 @@ import javax.swing.JComponent;
  */
 public class Stars 
 {
-
+    public int stars;
+    public Stars(int stars)
+    {
+        this.stars= stars;
+    }
     /**
      * Draws the stars
      *
@@ -22,7 +26,7 @@ public class Stars
     {
         g2.setColor(Color.YELLOW);
         Random gener= new Random();
-        int t = 15;
+        int t = stars;
         while (t>=0)
         {
             int randJump= gener.nextInt(785);

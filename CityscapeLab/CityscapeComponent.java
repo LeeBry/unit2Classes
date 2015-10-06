@@ -20,11 +20,16 @@ public class CityscapeComponent extends JComponent
     // ...
     private Building building;
     private Moon moon;
+    private int numStars;
     private Stars stars;
     private Hills hills;
 
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
+    public CityscapeComponent(int stars)
+    {
+        numStars= stars;
+    }
 
     /**
      * This method is invoked by the Java Run-Time whenever the component needs to be redrawn.
@@ -53,7 +58,7 @@ public class CityscapeComponent extends JComponent
         Building buildingA= new Building();
         buildingA.draw(g2);
         // lines below are the constructors for Stars
-        Stars stars= new Stars();
+        Stars stars= new Stars(numStars);
         stars.draw(g2);
         // lines below are the constructors for Stars
         Ground ground1=new Ground();
