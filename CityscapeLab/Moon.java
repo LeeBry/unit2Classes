@@ -5,13 +5,19 @@ import java.awt.Graphics2D;
 import javax.swing.JComponent;
 import java.awt.geom.Ellipse2D;
 /**
- * Write a description of class Moon
+ * class Moon places a moon in the sky
  * 
  * @Bryce Lee 
- * @version (a version number or a date)
  */
 public class Moon
 {
+    public int x;
+    public int y;
+    public Moon()
+    {
+        int x= 35;
+        int y= 35;
+    }
     /**
      * Draws the Moon
      *
@@ -21,7 +27,7 @@ public class Moon
     public void draw(Graphics2D g2)
     {
         g2.setColor(Color.WHITE);
-        Ellipse2D.Double moon= new Ellipse2D.Double(35, 35, 75, 75);
+        Ellipse2D.Double moon= new Ellipse2D.Double(x, y, 75, 75);
         g2.fill(moon);
     }
 }

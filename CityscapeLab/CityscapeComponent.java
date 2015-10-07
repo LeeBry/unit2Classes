@@ -18,17 +18,25 @@ public class CityscapeComponent extends JComponent
 {
     // define the objects in your Cityscape as instance variables
     // ...
-    private Building building;
+    private Building buildingA;
     private Moon moon;
     private int numStars;
-    private Stars stars;
-    private Hills hills;
+    private Stars aStars;
+    private Hills backhills;
+    private Ground ground1;
 
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
     public CityscapeComponent(int stars)
     {
         numStars= stars;
+        Moon moon= new Moon();
+        Hills backhills= new Hills();
+        Building buildingA= new Building();
+        Ground ground1=new Ground();
+        Stars aStars= new Stars(numStars);
+
+   
     }
 
     /**
@@ -49,19 +57,19 @@ public class CityscapeComponent extends JComponent
         g2.fillRect(0, 0, w, h);
         
         //lines below are the constructors for Hills
-        Hills backhills= new Hills();
+
         backhills.draw(g2);
         // lines below are the constructors for sun
-        Moon moon= new Moon();
+
         moon.draw(g2);
         // lines below are the constructors for Building
-        Building buildingA= new Building();
+
         buildingA.draw(g2);
         // lines below are the constructors for Stars
-        Stars stars= new Stars(numStars);
-        stars.draw(g2);
+
+        aStars.draw(g2);
         // lines below are the constructors for Stars
-        Ground ground1=new Ground();
+
         ground1.draw(g2);
         
 
@@ -74,6 +82,8 @@ public class CityscapeComponent extends JComponent
     {
         // update the objects in the cityscape so they are animated
         // ...
+        
+        aStars.starLess();
 
         // request that the Java Runtime repaints this component by invoking its paintComponent method
         repaint();

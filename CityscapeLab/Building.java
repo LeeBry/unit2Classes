@@ -7,7 +7,7 @@ import java.util.Random;
 import java.awt.geom.Line2D;
 import java.awt.Color;
 /**
- * Write a description of class building
+ * class Building makes the buildings. 
  * 
  * @Bryce Lee 
  * @version (a version number or a date)

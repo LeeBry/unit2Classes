@@ -11,6 +11,7 @@ import java.awt.Color;
  */
 public class Ground
 {
+    
     /**
      * Draws the ground
      * @param    g2 the graphics context
