@@ -30,11 +30,11 @@ public class CityscapeComponent extends JComponent
     public CityscapeComponent(int stars)
     {
         numStars= stars;
-        Moon moon= new Moon();
-        Hills backhills= new Hills();
-        Building buildingA= new Building();
-        Ground ground1=new Ground();
-        Stars aStars= new Stars(numStars);
+        moon= new Moon();
+        backhills= new Hills();
+        buildingA= new Building();
+        ground1=new Ground();
+        aStars= new Stars(numStars);
 
    
     }
