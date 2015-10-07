@@ -11,9 +11,11 @@ import java.awt.geom.Ellipse2D;
  */
 public class Moon
 {
-    public int x;
-    public int y;
-    public Moon()
+    public int x= 35;
+    public int y= 35;
+    /**
+     * Constructor for objects of class Moon
+     */public Moon()
     {
         int x= 35;
         int y= 35;
@@ -22,7 +24,6 @@ public class Moon
      * Draws the Moon
      *
      * @param    g2 the graphics context
-
      */
     public void draw(Graphics2D g2)
     {

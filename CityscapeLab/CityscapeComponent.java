@@ -27,6 +27,10 @@ public class CityscapeComponent extends JComponent
 
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
+    /**
+     * Constructor for objects of class CityscapeComponent
+     * @param Uses the user interger value to place number of stars in the cityscape. 
+     */
     public CityscapeComponent(int stars)
     {
         numStars= stars;
@@ -43,6 +47,7 @@ public class CityscapeComponent extends JComponent
      * This method is invoked by the Java Run-Time whenever the component needs to be redrawn.
      * It does not need to be invoked explicitly.
      *
+     *@param    g2 the graphics context
      */
     public void paintComponent(Graphics g)
     {
@@ -56,23 +61,12 @@ public class CityscapeComponent extends JComponent
         g2.setPaint(gp);
         g2.fillRect(0, 0, w, h);
         
-        //lines below are the constructors for Hills
-
+        // Below are the drawing methods for all instance variables
         backhills.draw(g2);
-        // lines below are the constructors for sun
-
         moon.draw(g2);
-        // lines below are the constructors for Building
-
         buildingA.draw(g2);
-        // lines below are the constructors for Stars
-
         aStars.draw(g2);
-        // lines below are the constructors for Stars
-
         ground1.draw(g2);
-        
-
     }
     /**
      * Animate the cityscape by updating the objects such that they appear to be animated when they are next drawn.

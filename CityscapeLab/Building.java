@@ -10,7 +10,7 @@ import java.awt.Color;
  * class Building makes the buildings. 
  * 
  * @Bryce Lee 
- * @version (a version number or a date)
+ * @Version 1
  */
 public class Building
 {

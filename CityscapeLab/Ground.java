@@ -7,7 +7,7 @@ import java.awt.Color;
  * This draws the ground of the city
  * 
  * @Bryce Lee
- * @version (a version number or a date)
+ * @Version1
  */
 public class Ground
 {
