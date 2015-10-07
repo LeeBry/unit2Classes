@@ -4,10 +4,10 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
 /**
- * Write a description of class Stars
+ * class Stars draws how many stars the user want to put into the sky.
  * 
  * @Bryce Lee 
- * @version (a version number or a date)
+ * 
  */
 public class Stars 
 {

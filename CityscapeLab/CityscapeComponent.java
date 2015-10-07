@@ -22,13 +22,14 @@ public class CityscapeComponent extends JComponent
     private Moon moon;
     private int numStars;
     private Stars stars;
-    private Hills hills;
+    private Hills backhills;
 
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
     public CityscapeComponent(int stars)
     {
         numStars= stars;
+        
     }
 
     /**
