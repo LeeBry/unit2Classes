@@ -23,7 +23,7 @@ public class Building
      */
     public void draw(Graphics2D g2)
     {
-
+        g2.setColor(Color.white);
         Rectangle2D.Double bounds = new Rectangle2D.Double(100, 350, 100, 400);
         g2.fill(bounds);
         g2.setColor(Color.black);

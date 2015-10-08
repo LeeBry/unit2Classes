@@ -19,7 +19,7 @@ public class Ground
      */
     public void draw(Graphics2D g2)
     {
-        g2.setColor(Color.black);  
+        g2.setColor(new Color(139,69,19));  
         g2.fillRect(0, 540, 785, 25);
     }
 }

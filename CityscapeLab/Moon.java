@@ -27,7 +27,7 @@ public class Moon
      */
     public void draw(Graphics2D g2)
     {
-        g2.setColor(Color.WHITE);
+        g2.setColor(new Color( 255,248,220));
         Ellipse2D.Double moon= new Ellipse2D.Double(x, y, 75, 75);
         g2.fill(moon);
     }
