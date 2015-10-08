@@ -57,7 +57,7 @@ public class CityscapeComponent extends JComponent
         // lines below are for the gradient
         int w = getWidth();
         int h = getHeight(); 
-        GradientPaint gp = new GradientPaint(0, 0, Color.BLACK,0, h, Color.WHITE);
+        GradientPaint gp = new GradientPaint(0, 0,new Color(25,25,112),0, h, Color.WHITE);
         g2.setPaint(gp);
         g2.fillRect(0, 0, w, h);
         
