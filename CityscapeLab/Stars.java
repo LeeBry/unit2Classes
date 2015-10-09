@@ -55,7 +55,7 @@ public class Stars
         while (t>=0)
         {
             int randJump= gener.nextInt(785);
-            int yrandJump= gener.nextInt(250);
+            int yrandJump= gener.nextInt(600);
             g2.fillOval(randJump, yrandJump,3, 3);
             t-=1;
 

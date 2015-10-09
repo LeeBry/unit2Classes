@@ -34,11 +34,12 @@ public class CityscapeComponent extends JComponent
     public CityscapeComponent(int stars)
     {
         numStars= stars;
+        aStars= new Stars(numStars);
         moon= new Moon();
         backhills= new Hills();
         buildingA= new Building();
         ground1=new Ground();
-        aStars= new Stars(numStars);
+
 
    
     }
@@ -57,15 +58,15 @@ public class CityscapeComponent extends JComponent
         // lines below are for the gradient
         int w = getWidth();
         int h = getHeight(); 
-        GradientPaint gp = new GradientPaint(0, 0,new Color(25,25,112),0, h, Color.WHITE);
+        GradientPaint gp = new GradientPaint(0, 0,new Color(25,25,112),0, h,new Color(65,105,225));
         g2.setPaint(gp);
         g2.fillRect(0, 0, w, h);
         
         // Below are the drawing methods for all instance variables
+        aStars.draw(g2);
         backhills.draw(g2);
         moon.draw(g2);
         buildingA.draw(g2);
-        aStars.draw(g2);
         ground1.draw(g2);
     }
     /**
