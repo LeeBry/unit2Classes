@@ -22,7 +22,8 @@ public class Hills
      */
     public void draw(Graphics2D g2)
     {
-        g2.setColor(new Color(0,100,0));     
+        GradientPaint gp = new GradientPaint(0, 300,new Color(0,100,0),0, 600,new Color(85,107,47));
+        g2.setPaint(gp);
         Ellipse2D.Double hill1= new Ellipse2D.Double(0, 520, 150, 100);
         g2.fill(hill1);
         Ellipse2D.Double hill2= new Ellipse2D.Double(600, 420, 300, 300);

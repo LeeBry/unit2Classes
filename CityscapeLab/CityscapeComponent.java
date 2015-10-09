@@ -39,9 +39,6 @@ public class CityscapeComponent extends JComponent
         backhills= new Hills();
         buildingA= new Building();
         ground1=new Ground();
-
-
-   
     }
 
     /**

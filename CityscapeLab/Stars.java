@@ -12,6 +12,7 @@ import javax.swing.JComponent;
 public class Stars 
 {
     public int stars;
+
     /**
      * Constructor for object of class Stars
      * @param Takes the user interger passed in through Cityscape viewer, to construct "X" 
