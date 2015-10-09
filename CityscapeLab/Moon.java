@@ -18,8 +18,8 @@ public class Moon
      */
     public Moon()
     {
-        int x= 35;
-        int y= 35;
+        x+= 35;
+        y+= 35;
     }
     
     /**

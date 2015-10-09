@@ -20,36 +20,30 @@ public class CityscapeViewer
     public static void main(String[] args) throws InterruptedException
     {
         // create and configure the frame (window) for the program
-        JFrame frame = new JFrame();
         
+        JFrame frame = new JFrame();    
         frame.setSize(800 /* x */, 600 /* y */);
         frame.setTitle("Cityscape");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
         // use the Scanner class to prompt the user for some configurable aspect of the cityscape
-        // ...
+        // ...   
         
         Scanner numStars = new Scanner(System.in);
         System.out.println("How many Stars do you want in the sky?: ");
-        int stars= numStars.nextInt();
-        
-        
-        
+        int stars= numStars.nextInt();              
         // a frame contains a single component; create the Cityscape component and add it to the frame
-        CityscapeComponent component = new CityscapeComponent(stars);
-        frame.add(component);
         
+        CityscapeComponent component = new CityscapeComponent(stars);
+        frame.add(component);        
         // make the frame visible which will result in the paintComponent method being invoked on the
         //  component.
-        frame.setVisible(true);
         
+        frame.setVisible(true);        
         // animate the cityscape
         for( int seconds = 0; seconds < ANIMATION_TIME_IN_SECONDS; seconds++ )
         {
             component.nextFrame();
             Thread.sleep( 1000 );
-        }
-        
+        }        
     }
-
 }
