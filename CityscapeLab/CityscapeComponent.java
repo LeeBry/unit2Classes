@@ -27,22 +27,25 @@ public class CityscapeComponent extends JComponent
 
     // define the CityscapeComponent contructor and intiailize all instance variables
     // ...
+    /**
+     * Constructor for objects of class CityscapeComponent
+     * @param Uses the user interger value to place number of stars in the cityscape. 
+     */
     public CityscapeComponent(int stars)
     {
         numStars= stars;
+        aStars= new Stars(numStars);
         moon= new Moon();
         backhills= new Hills();
         buildingA= new Building();
         ground1=new Ground();
-        aStars= new Stars(numStars);
-
-   
     }
 
     /**
      * This method is invoked by the Java Run-Time whenever the component needs to be redrawn.
      * It does not need to be invoked explicitly.
      *
+     *@param    g2 the graphics context
      */
     public void paintComponent(Graphics g)
     {
@@ -52,27 +55,16 @@ public class CityscapeComponent extends JComponent
         // lines below are for the gradient
         int w = getWidth();
         int h = getHeight(); 
-        GradientPaint gp = new GradientPaint(0, 0, Color.BLACK,0, h, Color.WHITE);
+        GradientPaint gp = new GradientPaint(0, 0,new Color(25,25,112),0, h,new Color(65,105,225));
         g2.setPaint(gp);
         g2.fillRect(0, 0, w, h);
         
-        //lines below are the constructors for Hills
-
-        backhills.draw(g2);
-        // lines below are the constructors for sun
-
-        moon.draw(g2);
-        // lines below are the constructors for Building
-
-        buildingA.draw(g2);
-        // lines below are the constructors for Stars
-
+        // Below are the drawing methods for all instance variables
         aStars.draw(g2);
-        // lines below are the constructors for Stars
-
+        backhills.draw(g2);
+        moon.draw(g2);
+        buildingA.draw(g2);
         ground1.draw(g2);
-        
-
     }
     /**
      * Animate the cityscape by updating the objects such that they appear to be animated when they are next drawn.

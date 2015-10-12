@@ -7,7 +7,7 @@ import java.awt.Color;
  * This draws the ground of the city
  * 
  * @Bryce Lee
- * @version (a version number or a date)
+ * @Version1
  */
 public class Ground
 {
@@ -19,7 +19,7 @@ public class Ground
      */
     public void draw(Graphics2D g2)
     {
-        g2.setColor(Color.black);  
+        g2.setColor(new Color(139,69,19));  
         g2.fillRect(0, 540, 785, 25);
     }
 }
